@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
+title: Welcome to my page
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
@@ -33,6 +33,41 @@ github_username:  jekyll
 theme: minima
 plugins:
   - jekyll-feed
+
+# Enable/show navigation. There are there options:
+#   0 - always hide
+#   1 - always show
+#   2 - show only if posts are present
+navigation: 2
+
+# URL to source code, used in _includes/footer.html
+codeurl: 'https://github.com/JoseOrjales'
+
+# Default categories (in order) to appear in the navigation
+sections: [
+    ['doc', 'Documentation'],
+    ['tut', 'Tutorial'],
+    ['ref', 'Reference'],
+    ['dev', 'Developers'],
+    ['post', 'Posts']
+]
+
+# Syntax highlighting
+highlighter: rouge
+
+# Use the kramdown Markdown renderer
+markdown: kramdown
+redcarpet:
+    extensions: [
+        'no_intra_emphasis',
+        'fenced_code_blocks',
+        'autolink',
+        'strikethrough',
+        'superscript',
+        'with_toc_data',
+        'tables',
+        'hardwrap'
+    ]
 
 # Exclude from processing.
 # The following items will not be processed, by default.
